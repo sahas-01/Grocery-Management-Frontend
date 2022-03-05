@@ -1,24 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.css";
+import { createTheme, ThemeProvider } from '@material-ui/core/styles';
+import Common from "./pages/Common/Common";
+import AvailableShops from "./pages/User/AvailableShops/AvailableShops";
+import Slots from "./pages/User/Slots/Slots";
+
+
+const theme = createTheme({
+  palette: {
+    type: "dark",
+    background: {
+      default: "#081220",
+      paper: "#081220",
+    },
+    primary: {
+      main: "#1799E1",
+    },
+    secondary: {
+      main: "#1799E1",
+    },
+    // whitetext: {
+    // 	main: "#fafafa",
+    // },
+    // pureWhite: {
+    // 	main: "#FFFFFF",
+    // },
+  },
+  typography: {
+    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+  }
+});
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <Router>
+          <Switch>
+            <Route exact path="/"
+              component={Common} />
+            <Route path="/availableshops"
+              component={AvailableShops} />
+            <Route path="/slots"
+              component={Slots} />
+          </Switch>
+        </Router>
+      </div>
+    </ThemeProvider>
   );
 }
 
