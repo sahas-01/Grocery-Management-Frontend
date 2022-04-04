@@ -108,7 +108,7 @@ function Common() {
                                     classes.buttonTeacher
                                 )}
                             >
-                                Admin
+                                Shopkeeper
                             </Button>
                         </Link>
                     </Grid>
@@ -124,7 +124,7 @@ function Common() {
                                     classes.buttonStudent
                                 )}
                             >
-                                User
+                                Customer
                             </Button>
                         </Link>
                     </Grid>

@@ -5,6 +5,8 @@ import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import Common from "./pages/Common/Common";
 import AvailableShops from "./pages/User/AvailableShops/AvailableShops";
 import Slots from "./pages/User/Slots/Slots";
+import Login from "./components/Login/Login";
+import LoginPage from "./pages/LoginPage/Login";
 
 
 const theme = createTheme({
@@ -45,6 +47,8 @@ function App() {
               component={AvailableShops} />
             <Route path="/slots"
               component={Slots} />
+            <Route path="/userlogin"
+              component={LoginPage} />
           </Switch>
         </Router>
       </div>
