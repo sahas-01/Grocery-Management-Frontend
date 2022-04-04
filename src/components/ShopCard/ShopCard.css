@@ -1,0 +1,33 @@
+.club-test-tile {
+	width: 250px;
+	height: 250px;
+	border-radius: 10px;
+	background: linear-gradient(180deg, #1799E1 0%, #093966 100%);
+	color: white;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: all 0.2s ease-in-out;
+	margin: 20px;
+	text-align: center;
+	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+	box-shadow: 0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12), 0 5px 6px -3px rgba(0, 0, 0, 0.20);
+}
+
+.club-test-tile:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.tile-subtitle{
+	text-align: center;
+}
+
+.tile-subtitle{
+	color: white;
+	opacity: 0.8;
+	padding: 0.5em;
+
+}

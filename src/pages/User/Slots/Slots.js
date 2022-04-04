@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import SideNav from '../../../components/AppDrawer/SideNav';
+import SlotsTable from '../../../components/SlotsTable/SlotsTable';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -32,6 +33,7 @@ export default function Slots() {
                 <Typography paragraph>
                     Slots for a given shop is put down here
                 </Typography>
+                <SlotsTable />    
             </main>
         </div>
     );
