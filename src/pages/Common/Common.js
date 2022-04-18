@@ -95,7 +95,7 @@ function Common() {
                 <Grid item container xs={12} justify="space-around">
                     <Grid item>
                         <Link
-                            to="/adminhome"
+                            to="/adminlogin"
                             style={{
                                 textDecoration: "None",
                                 textTransform: "capitalize",

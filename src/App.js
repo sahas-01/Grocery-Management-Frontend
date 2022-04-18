@@ -8,6 +8,8 @@ import Slots from "./pages/User/Slots/Slots";
 import Login from "./components/Login/Login";
 import LoginPage from "./pages/LoginPage/Login";
 import SlotsTable from "./components/Slotstables/SlotTable";
+import AddSlotPage from "./pages/Admin/AddSlot/AddSlotPage";
+import AdminLogin from "./pages/Admin/Login/AdminLogin";
 
 
 const theme = createTheme({
@@ -50,6 +52,10 @@ function App() {
               component={Slots} />
             <Route path="/userlogin"
               component={LoginPage} />
+            <Route path="/adminlogin"
+              component={AdminLogin} />
+            <Route path="/admin/home"
+              component={AddSlotPage} />
           </Switch>
         </Router>
       </div>
