@@ -1,0 +1,120 @@
+.slotstable {
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  .slotstable .slotstable-row {
+    background-color: #f8f8f8;
+    /* border: 1px solid #ddd; */
+    padding: .35em;
+  }
+
+  .slot-headings {
+    background-color: #1799E1;
+    /* border: 1px solid #ddd; */
+    padding: .35em;
+    height: 70px;
+  }
+  
+  .slotstable,
+  .slotstable .slot-content  {
+    padding: .625em;
+    text-align: center;
+    color: white;
+    background-color: black;
+    /* border-bottom: 1px solid rgb(45, 45, 45); */
+  }
+
+  .slot-content{
+      font-size: 1.25em;
+      border-bottom: 1px solid rgb(45, 45, 45);
+  }
+  
+  .slotstable .slot-headings {
+    font-size: 1.35em;
+  }
+
+  .book-now{
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #00a2aa;
+    color: whitesmoke;
+    font-size: 15px;
+    transition: .5s;
+    margin: 10px 0px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    height: 40px;
+  }
+
+  .book-now:hover{
+    background-color: #005eea;
+    color: whitesmoke;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .slotstable {
+      border: 0;
+    }
+  
+    .slotstable caption {
+      font-size: 1.3em;
+    }
+    
+    .slotstable .slotstablehead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    .slotstable .slotstable-row {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    .slotstable .slot-content {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    .slotstable .slot-content::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    .slotstable .slot-content:last-child {
+      border-bottom: 0;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

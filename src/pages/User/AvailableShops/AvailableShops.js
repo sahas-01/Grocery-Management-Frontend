@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: '10%',
+        marginTop: '5%',
         marginLeft: '2.5%',
 
     },

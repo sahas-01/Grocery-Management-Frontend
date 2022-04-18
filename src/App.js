@@ -7,6 +7,7 @@ import AvailableShops from "./pages/User/AvailableShops/AvailableShops";
 import Slots from "./pages/User/Slots/Slots";
 import Login from "./components/Login/Login";
 import LoginPage from "./pages/LoginPage/Login";
+import SlotsTable from "./components/Slotstables/SlotTable";
 
 
 const theme = createTheme({
@@ -45,7 +46,7 @@ function App() {
               component={Common} />
             <Route path="/availableshops"
               component={AvailableShops} />
-            <Route path="/slots"
+            <Route path="/viewslots"
               component={Slots} />
             <Route path="/userlogin"
               component={LoginPage} />

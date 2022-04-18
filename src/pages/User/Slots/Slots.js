@@ -3,6 +3,7 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import SideNav from '../../../components/AppDrawer/SideNav';
 import SlotsTable from '../../../components/SlotsTable/SlotsTable';
+import SlotTable from '../../../components/Slotstables/SlotTable';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -30,10 +31,10 @@ export default function Slots() {
             <SideNav availableshops="Slots" />
             <main className={classes.content}>
                 <div className={classes.toolbar} />
-                <Typography paragraph>
-                    Slots for a given shop is put down here
-                </Typography>
-                <SlotsTable />    
+                {/* <Typography paragraph> */}
+                    <h1>Enzo's Supermarket</h1>
+                {/* </Typography> */}
+                <SlotTable />
             </main>
         </div>
     );
