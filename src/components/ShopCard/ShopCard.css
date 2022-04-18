@@ -1,8 +1,8 @@
 .club-test-tile {
-	width: 250px;
-	height: 250px;
+	width: 325px;
+	height: 370px;
 	border-radius: 10px;
-	background: linear-gradient(180deg, #1799E1 0%, #093966 100%);
+	background: #343C48;
 	color: white;
 	font-weight: bold;
 	display: flex;
@@ -14,11 +14,18 @@
 	text-align: center;
 	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 	box-shadow: 0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12), 0 5px 6px -3px rgba(0, 0, 0, 0.20);
+	padding-bottom: 10px;
+}
+
+.club-test-tile img {
+	width: 100%;
+	height: 75%;
+	border-radius: 10px;
+	margin-bottom: 15px;
 }
 
 .club-test-tile:hover {
 	transform: scale(1.1);
-	cursor: pointer;
 }
 
 .tile-subtitle{
@@ -30,4 +37,30 @@
 	opacity: 0.8;
 	padding: 0.5em;
 
+}
+
+.slotviewbtn{
+	background: rgb(45, 149, 234);
+	position: relative;
+    display: inline-block;
+    padding: 10px 20px 30px 20px;
+    color: whitesmoke;
+    font-size: 18px;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    overflow: hidden;
+    transition: .5s;
+    margin: 10px 0px;
+	border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: 600;
+}
+
+.slotviewbtn:hover{
+	background: #0339fd;
+	color: #fff;
+	box-shadow: 0 0 5px #01a7da;
+	border-radius: 10px;
 }

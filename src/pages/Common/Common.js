@@ -114,7 +114,7 @@ function Common() {
                     </Grid>
                     <Grid item>
                         <Link
-                            to="/availableshops"
+                            to="/userlogin"
                             style={{ textDecoration: "None" }}
                         >
                             <Button

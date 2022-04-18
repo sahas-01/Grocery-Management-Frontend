@@ -1,5 +1,6 @@
 import React from 'react'
 import './Login.css'
+import { Link } from 'react-router-dom'
 
 export default function Login() {
     return (
@@ -16,9 +17,9 @@ export default function Login() {
                 </div>
 
                 <br />
-
-                <input type="button" value="Submit" id="auth" />
-
+                <Link to="/availableshops">
+                    <input type="submit" value="Submit" id="auth" />
+                </Link>
             </form>
         </div>
     );
